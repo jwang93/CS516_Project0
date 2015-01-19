@@ -1111,29 +1111,180 @@ References:
 - [2] http://stackoverflow.com/questions/24564725/apache-cassandra-vs-datastax-cassandra
 
 
-**56) DataTorrent**
+**56) DataTorrent**  
 *A2*  
+What:
+- realtime streaming platform for enterprise 
+- similar to Apache Storm 
 
-**57) Datomic**
-*C3*
+Strengths:
+- handle realtime processing 
+- can support "exactly onces" semantics which is when you process the data only once (a problem that a lot of realtime systems have)
+- can support a number of data sources 
+- runtime operations are managed for you: scaling, resource optimization, availability, etc 
 
-**58) DeepDB**
-*D4*
+Weaknesses:
+- enterprise product you will have to pay for 
+- not that much of a community around it (probably not needed since all the maintenance and setup is handled for you) 
 
-**59) Documentum xDB**
-*C1*
+References:
+- [1] https://www.datatorrent.com/
+- [2] http://www.datanami.com/2014/04/23/crossing_the_big_data_stream_with_datatorrent/
+- [3] http://hortonworks.com/partner/datatorrent/
+- [4] https://mybigdatajourney.wordpress.com/2014/07/24/open-source-storm-vs-commercially-available-data-torrent/
 
-**60) Drizzle**
-*C4*
+**57) Datomic**  
+*C3*  
+What:
+- transactional, cloud-ready, distributed database 
+- implement Datalog 
 
-**61) Ehcache**
-*E5*
+Strengths:
+- kind of like a hybrid between NoSQL and SQL systems
+- so you get a minimal schema while still allowing for Joins 
+- comes with enterprise support 
 
-**62) Elasticsearch**
-*A1*
+Weaknesses:
+- doesn't provide all the benefits of a NoSQL system like the schema-less document object storage model of MongoDB
 
-**63) EnterpriseDB**
-*B3*
+References:
+- [1] http://www.datomic.com/rationale.html
+- [2] http://en.wikipedia.org/wiki/Datomic
+- [3] http://comments.gmane.org/gmane.comp.db.datomic.user/9
+
+**58) DeepDB**  
+*D4*  
+What:
+- branded as a general purpose database for big data 
+
+Strengths:
+- built to provide good performance while scaling up 
+- done through writing indexes quickly 
+- good for OLTP 
+- can perform realtime ACID transactions (similar to that of a normal relational database) and analytics on the same data set 
+
+Weaknesses:
+- tough to sell a new type of databae to enterprise customers who prefer to continue using what they have 
+- "keep on using something until it breaks"
+- introduces a new product in an already very mature and congested space 
+- limited community, not much readily available information on it
+
+References:
+- [1] http://deep.is/deepdb/
+- [2] http://www.dbms2.com/2013/04/14/deep-information-sciences-deepdb/
+- [3] http://www.severalnines.com/news/article/database-clustering/is-deepdb-a-good-general-purpose-choice-for-big-data-needs/801612841
+
+**59) Documentum xDB**  
+*C1*  
+What:
+- database out of EMC, interesting because it is a native XML database 
+- not relational 
+
+Strengths:
+- many of the pros of NoSQL systems such as being able to store more complex objects
+- good at managing XML structures
+- native XML means that the underlying data is stored as XML so it does not need to convert from XML to a different data type
+- this increases efficiency and improves performance 
+
+Weaknesses:
+- very niche use case of only XML
+- peoeple are moving away from XML because it is too verbose and picking formats such as JSON 
+
+References:
+- [1] http://www.emc.com/products/detail/software2/documentum-xdb.htm
+- [2] http://en.wikipedia.org/wiki/XML_database
+
+**60) Drizzle**  
+*C4*  
+What:
+- open source cloud RDBMS forked off MySQL 
+- moved all the non essential components of MySQL out into modules that can be added independently 
+
+Strengths:
+- supposed to be a trimmed down version of MySQL
+- this should give it a performance boost 
+- cache and optimization components more pluggable than MySQL 
+- supposed to be designed for web applications and cloud computing 
+- free
+
+Weaknesses:
+- project is kind of dead right now, last stable release was 2 years ago
+- not well supported
+- competitor MySQL works fine for most use cases 
+
+References:
+- [1] http://www.drizzle.org/
+- [2] http://en.wikipedia.org/wiki/Drizzle_(database_server)
+- [3] http://db-engines.com/en/system/Drizzle%3BMySQL
+- [4] http://www.linuxuser.co.uk/news/mysql-successor-drizzle-reaches-maturity
+- [5] http://www.quora.com/Why-is-Drizzle-dead
+
+**61) Ehcache**  
+*E5*  
+What:
+- basic memory cache used a lot by Java programs developed by Terracotta 
+
+Strength:
+- supports both memory and disk stores 
+- scales up well 
+- fast recovery from outages 
+- very fast performance (better than memcached) because it runs in the same JVM process as the application (this is not the case for something like redis 
+
+Weaknesses:
+- doesn't support as many native clients as Memcached, which has clients in all major languages 
+- ties you to the JVM 
+
+References:
+- [1] http://ehcache.org/
+- [2] http://en.wikipedia.org/wiki/Ehcache
+- [3] http://www.quora.com/Distributed-Caching/Memcached-vs-Ehcached-Which-is-better-and-why
+- [4] http://stackoverflow.com/questions/18910822/why-is-ehcache-faster-than-memcache
+
+**62) Elasticsearch**  
+*A1*  
+What:
+- they have something called an ELK stack of Elasticsearch, Logstash, and Kibana 
+- get actionable insight in realtime from structured and unstructured data 
+- it's a realtime search and analytics engine 
+- can also serve the purpose of a schema-less datastore - something like MongoDB 
+
+Strengths:
+- has a RESTful web interface (makes it flexible and usable by many people)
+- utilizes schema-free JSON documents 
+- open source under an Apache License 
+- supposed to have a better distributed model and easier to use than SOLR 
+
+Weaknesses:
+- less mature and widely used than Solr, mostly because Solr has been around longer 
+- no security whatsoever (authentication or access control)
+- no support for transactions or data processing
+
+References:
+- [1] http://www.elasticsearch.org/overview/
+- [2] http://en.wikipedia.org/wiki/Elasticsearch
+- [3] http://stackoverflow.com/questions/10213009/solr-vs-elasticsearch
+- [4] http://www.quora.com/Why-should-I-NOT-use-ElasticSearch-as-my-primary-datastore
+
+**63) EnterpriseDB**  
+*B3*  
+What:
+- enterprise software, solutions, tools for PostgreSQL 
+
+Strengths:
+- supports Postgres which has its own slew of advantages over MySQL 
+- comes with a bunch of services like consulting, data management
+- more features for enterprise systems are in Postgres 
+
+Weaknesses:
+- supports a unique use case of PostgreSQL 
+- makes it harder for people using MySQL systems to migrate
+- costs money 
+
+References:
+- [1] http://www.enterprisedb.com/
+- [2] http://en.wikipedia.org/wiki/EnterpriseDB
+- [3] http://www.enterprisedb.com/solutions/mysql-vs-postgresql/why-move-mysql-postgres-plus
+
 
 **64) Exasol**
 *C5*
