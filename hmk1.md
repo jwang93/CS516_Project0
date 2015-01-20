@@ -1286,11 +1286,49 @@ References:
 - [3] http://www.enterprisedb.com/solutions/mysql-vs-postgresql/why-move-mysql-postgres-plus
 
 
-**64) Exasol**
-*C5*
+**64) Exasol**  
+*C5*  
+What:
+- database management software company with the primary product of EXASolution 
+- in memory, column oriented, relational database management software 
+- compresses data heavily 
 
-**65) FairCom**
-*C3*
+Strengths:
+- doesn't need to be configured/tuned as the database performs self optimization 
+- known for really good performance from the columnar orientation + in memory compression 
+- perks of column based databases is that you can avoid the need for entire table scans and pre aggregation of data 
+
+Weaknesses:
+- relies on their being a lot of RAM 
+- implicit assumption that the queries you are running are on data stored in RAM 
+- proprietary system gives you little flexibility; you need to run the data warehouse on top of EXACluster OS (the company's own operating system)
+
+References:
+- [1] http://www.exasol.com/en/
+- [2] http://en.wikipedia.org/wiki/EXASOL
+- [3] http://www.informationweek.com/software/information-management/comparing-vertica-paraccel-and-exasol/d/d-id/1071118?
+- [4] http://www.it-director.com/technology/data_mgmt/content.php?cid=10541
+
+**65) FairCom**  
+*C3*  
+What:
+- database company known for its C-tree technology 
+
+Strengths:
+- c-tree Ace (Faircom's product) uses record oriented, indexed sequential access method structure 
+- this boosts indexing performance / speed 
+- it is a very pluggable system making it a good option for smaller embedded systems with limited resources 
+- cross platform and embeddable
+
+Weaknesses:
+- not very popular, SQL works for most people
+- limited documentation, information available online 
+
+References:
+- [1] http://www.faircom.com/ace/products_t.php
+- [2] http://dbaspot.com/databases/158221-faircom-c-tree-server-vs-relational-dbms.html
+- [3] http://en.wikipedia.org/wiki/C-treeACE
+
 
 **66) FatDB**
 *C2*
