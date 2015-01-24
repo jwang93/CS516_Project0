@@ -19,3 +19,22 @@ References:
 - [2] http://www.laurencegellert.com/2013/05/pros-and-cons-of-rds-vs-ec2-for-mysql-with-aws/
 - [3] https://www.scalebase.com/aws-rds-vs-self-hosted-mysql-availability-scalability-performance/
 
+
+**Azure SQL Database**  
+*D5*  
+What:
+- Microsoft's proprietary relational database as a service 
+
+Strengths:
+- similar to many of the AWS products, SQL Database can dynamically scale up to thousands of machines based on load 
+- they manage the service for you so you don't need to devote engineering resources to maintenance 
+- pretty cheap compared to AWS RDS because Amazon dedicates resources to an individual entity whereas Azure sharees the resources 
+
+Weaknesses:
+- size limitations: Azure only allows up to 50GB whereas RDS allows for 1TB 
+- doesn't handle data restoration as well as RDS, for Azure you need to manually configure and set up how you want to do backups where RDS just does 8 days of backups automatically for you 
+- fewer features than RDS which has the full fledged MySQL feature set 
+
+References: 
+- [1] http://azure.microsoft.com/en-us/services/sql-database/
+- [2] https://www.develop.com/sqlazurevsamazonrds

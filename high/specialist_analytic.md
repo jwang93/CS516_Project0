@@ -91,3 +91,27 @@ References:
 
 
 
+
+
+**Couchbase**  
+*C2*  
+What:
+- NoSQL document oriented database great for applications that are interactive 
+
+Strengths:
+- handle many concurrent users 
+- scales up with low latency and high throughput 
+- based on memcache which is proven to be super fast (hard to get better performance than Couchbase)
+
+Weaknesses:
+- fewer querying and indexing options compared to competitor MongoDB 
+- doesn't have good dynamic query support compared to Mongo
+
+References:
+- [1] http://www.couchbase.com/nosql-resources/what-is-no-sql
+- [2] http://en.wikipedia.org/wiki/Couchbase_Server
+- [3] http://www.infoworld.com/article/2613970/nosql/nosql-showdown--mongodb-vs--couchbase.html
+- [4] http://www.quora.com/How-does-Riak-compare-to-Couchbase
+
+
+
