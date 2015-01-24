@@ -7,7 +7,7 @@ Due Date: Jan 21, 2015
       
 ## **Main Systems**
 
-**Given that I only have so much time, these are the systems that I focused on**
+**Given that I only have so much time, these are the systems that I focused on.**  
 My criteria for choosing these systems were:
 - widely used in industry 
 - ample reviews, documentation 
@@ -16,7 +16,50 @@ My criteria for choosing these systems were:
 - compared against frequently 
 
 
-**15) Apache Drill**   
+**Allegrograph**  
+*E1*  
+What:
+- specifically a graph database 
+- uses combination of memory and disk allowing for huge scale 
+- utilizes an RDF store (triple store of the form - subject:predicate:object)
+
+Strengths:  
+- huge scale due to its usage of disk 
+- has a java client library that supporst Jena and Sesame 
+- supports SPARQL queries 
+
+Weaknesses:  
+- there are competing graph databases that are open source, Allegro is commercial license
+- not embeddable compared to competitor Neo4J 
+- doesn't support MapReduce? 
+
+References:  
+- [1] http://franz.com/agraph/allegrograph/
+- [2] http://db-engines.com/en/system/AllegroGraph%3BNeo4j%3BVoltDB
+- [3] http://stackoverflow.com/questions/2613357/difference-between-graph-database-neo4j-allegrograph
+- [4] http://vschart.com/compare/allegrograph/vs/neo4j
+
+**Altiscale**  
+** I have used Altiscale before at my previous internship at Drawbrdge **  
+*A3*  
+What:
+- company that provides Hadoop cloud services, they run your Hadoop workloads for you 
+- notion of Hadoop as a Service 
+
+Strengths:  
+- easy to use, configurations all handled for you, customer support 
+- cloud nature can handle variability of Hadoop workloads 
+ 
+Weaknesses:  
+- expensive - would be much cheaper to roll out your own Hadoop infrastructure 
+- less control over your Hadoop jobs than if you ran it yourself 
+
+References:  
+- [1] https://www.altiscale.com/why-altiscale/
+
+
+
+**Apache Drill**   
 *B4*  
 What:
 - open source, SQL query engine for Hadoop and NoSQL
@@ -37,7 +80,7 @@ References:
 - [4] https://www.mapr.com/products/apache-drill
 
 
-**16) Apache Hive**   
+**Apache Hive**   
 ** I have experience using Hive before **  
 *B4*  
 
@@ -59,7 +102,7 @@ References:
 - [2] http://www.quora.com/What-are-the-pros-and-cons-between-Pig-and-Hive
 - [3] http://stackoverflow.com/questions/9569009/what-are-the-pros-and-cons-of-running-a-job-in-hadoop-using-various-languages
 
-**17) Apache S4**  
+**Apache S4**  
 *A2*  
 What:
 - made more for processing continuous streams of data (real time data ingestion)
@@ -79,7 +122,7 @@ References:
 - [2] http://www.quora.com/How-does-S4-compare-to-Flume
 - [3] http://www.quora.com/What-would-you-choose-between-Flume-Yahoo-S4-and-Backtype-Twitter-Storm-and-why
 
-**18) Apache Storm**   
+**Apache Storm**   
 *A2*   
 What:
 - distributed realtime computation system initially developed out of Twitter
@@ -102,7 +145,51 @@ References:
 - [4] http://stackoverflow.com/questions/15520993/storm-vs-trident-when-not-to-use-trident
 
 
-**23) AWS ElastiCache**   
+**Apache Tajo**   
+*B3*  
+What:
+- relational, distributed data warehouse system built on Hadoop 
+- SQL query processing engine 
+- one of the growing number of SQL-on-Hadoop frameworks 
+
+Strengths:  
+- can adjust query processing based on: user queries, characteristics of data, cluster status
+- supports SQL standards which gives it a lower barrier to entry 
+- great performance (way better than Hive) and better than Impala on: filters, group by, join, filter scan 
+
+Weaknesses:  
+- worse than Impala when you do a union and then join
+- smaller community as it is developed in Korea may not make it worth it when you have really good alternatives in Impala and Presto 
+
+References:  
+- [1] http://mail-archives.apache.org/mod_mbox/tajo-dev/201305.mbox/%3CCACZfFK6PNE+AuNX6CQ0WD784ZxUavEykEKa-rWFMXp0xdyAHmg@mail.gmail.com%3E
+- [2] http://tajo.apache.org/
+- [3] http://blogs.gartner.com/nick-heudecker/apache-tajo-enters-the-sql-on-hadoop-space/
+- [4] http://blog.matthewrathbone.com/2014/06/08/sql-engines-for-hadoop.html#apache-tajotajo
+
+
+**AWS DynamoDB**   
+*E2*  
+What:
+- NoSQL database service 
+- fully managed database that supports document and key value data models 
+
+Strengths:  
+- great for lookup queries 
+- persistent store unlike Redis which is for temporal data 
+- schema free, lightweight 
+
+Weaknesses:  
+- join queries 
+- good for specific well defined tasks but it seems like it's not full featured enough to be a standalone DB solution to serve your entire system 
+
+References:  
+- [1] http://aws.amazon.com/dynamodb/
+- [2] http://db-engines.com/en/system/DynamoDB%3BMySQL
+- [3] http://www.quora.com/How-does-one-choose-DynamoDB-versus-Redis-ElastiCache-on-AWS
+
+
+**AWS ElastiCache**   
 *E4*  
 What: 
 - web service for an in memory cache service in the cloud 
@@ -121,7 +208,7 @@ References:
 - [3] http://www.quora.com/What-are-the-advantages-and-disadvantages-of-using-AWS-Elasticache-over-self-hosted-Memcached
 - [4] http://harish11g.blogspot.in/2012/11/amazon-elasticache-memcached-ec2.html
 
-**27) AWS RDS**   
+**AWS RDS**   
 *D5*  
 What:
 - Amazon's version of a traditional relational database in the cloud 
@@ -141,7 +228,7 @@ References:
 - [2] http://www.laurencegellert.com/2013/05/pros-and-cons-of-rds-vs-ec2-for-mysql-with-aws/
 - [3] https://www.scalebase.com/aws-rds-vs-self-hosted-mysql-availability-scalability-performance/
 
-**28) AWS Redshift**   
+**AWS Redshift**   
 *D6*  
 What:
 - data warehouse solution that makes it easy to do analysis on the data using your own business analytics tools
@@ -161,7 +248,7 @@ References:
 - [2] http://www.quora.com/What-are-some-good-real-world-examples-of-using-Amazon-redshift
 - [3] http://www.quora.com/What-are-the-pros-and-cons-of-using-Amazon-Redshift
 
-**30) Azure DocumentDB**  
+**Azure DocumentDB**  
 *E2*  
 What:
 - Microsoft's proprietary NoSQL document database 
@@ -183,7 +270,7 @@ References:
 - [4] http://db-engines.com/en/system/Microsoft+Azure+DocumentDB%3BMongoDB
 
 
-**31) Azure Search**  
+**Azure Search**  
 *B2* 
 - Microsoft's search as a service platform 
 - built on top of Elastisearch, which provides for its text search
@@ -202,8 +289,27 @@ References:
 - [3] http://cloudcomputing.sys-con.com/node/3221202
 - [4] http://weblogs.asp.net/scottgu/azure-new-documentdb-nosql-service-new-search-service-new-sql-alwayson-vm-template-and-more
 
+**Azure SQL Database**  
+*D5*  
+What:
+- Microsoft's proprietary relational database as a service 
 
-**37) Cassandra**  
+Strengths:
+- similar to many of the AWS products, SQL Database can dynamically scale up to thousands of machines based on load 
+- they manage the service for you so you don't need to devote engineering resources to maintenance 
+- pretty cheap compared to AWS RDS because Amazon dedicates resources to an individual entity whereas Azure sharees the resources 
+
+Weaknesses:
+- size limitations: Azure only allows up to 50GB whereas RDS allows for 1TB 
+- doesn't handle data restoration as well as RDS, for Azure you need to manually configure and set up how you want to do backups where RDS just does 8 days of backups automatically for you 
+- fewer features than RDS which has the full fledged MySQL feature set 
+
+References: 
+- [1] http://azure.microsoft.com/en-us/services/sql-database/
+- [2] https://www.develop.com/sqlazurevsamazonrds
+
+
+**Cassandra**  
 *C2*  
 What:
 - open sourced, distributed database management system that is unique in that it offers column indexes 
@@ -228,7 +334,7 @@ References:
 - [5] http://stackoverflow.com/questions/2460954/what-is-ad-hoc-query
 
 
-**43) Cloudera**  
+**Cloudera**  
 *A5*  
 What:
 - multi billion dollar company that provides Hadoop based software and services
@@ -249,7 +355,7 @@ References:
 - [4] http://www.b-eye-network.com/blogs/eckerson/archives/2014/02/the_battle_for.php
 
 
-**51) Couchbase**  
+**Couchbase**  
 *C2*  
 What:
 - NoSQL document oriented database great for applications that are interactive 
@@ -269,7 +375,7 @@ References:
 - [3] http://www.infoworld.com/article/2613970/nosql/nosql-showdown--mongodb-vs--couchbase.html
 - [4] http://www.quora.com/How-does-Riak-compare-to-Couchbase
 
-**52) CouchDB**  
+**CouchDB**  
 *D2*  
 What:
 - open sourced database focused on being great for the web
@@ -293,7 +399,7 @@ References:
 - [4] http://nosql.mypopescu.com/post/298557551/couchdb-vs-mongodb
 
 
-**54) Databricks/Spark**  
+**Databricks/Spark**  
 *A5*  
 What:
 - open source processing engine for Hadoop data 
@@ -317,8 +423,29 @@ References:
 - [5] http://stackoverflow.com/questions/25267204/hadoop-vs-spark
 
 
+**Ehcache**  
+*E5*  
+What:
+- basic memory cache used a lot by Java programs developed by Terracotta 
 
-**62) Elasticsearch**  
+Strength:
+- supports both memory and disk stores 
+- scales up well 
+- fast recovery from outages 
+- very fast performance (better than memcached) because it runs in the same JVM process as the application (this is not the case for something like redis 
+
+Weaknesses:
+- doesn't support as many native clients as Memcached, which has clients in all major languages 
+- ties you to the JVM 
+
+References:
+- [1] http://ehcache.org/
+- [2] http://en.wikipedia.org/wiki/Ehcache
+- [3] http://www.quora.com/Distributed-Caching/Memcached-vs-Ehcached-Which-is-better-and-why
+- [4] http://stackoverflow.com/questions/18910822/why-is-ehcache-faster-than-memcache
+
+
+**Elasticsearch**  
 *A1*  
 What:
 - they have something called an ELK stack of Elasticsearch, Logstash, and Kibana 
@@ -344,7 +471,7 @@ References:
 - [4] http://www.quora.com/Why-should-I-NOT-use-ElasticSearch-as-my-primary-datastore
 
 
-**88) HBase**  
+**HBase**  
 *C2*  
 What:
 - open source, non-relational distributed database that was modeled after Google's BigTable 
@@ -375,7 +502,7 @@ References:
 - [6] http://bigdatanoob.blogspot.com/2012/11/hbase-vs-cassandra.html
 - [7] http://www.quora.com/What-are-the-differences-between-HBase-and-Cassendra
 
-**90) Hortonworks**  
+**Hortonworks**  
 *A5*  
 What:
 - a company that builds a variety of solutions for Hadoop 
@@ -398,6 +525,34 @@ References:
 - [3] http://www.experfy.com/blog/cloudera-vs-hortonworks-comparing-hadoop-distributions/
 - [4] http://www.quora.com/What-are-some-major-pros-cons-of-Cloudera-vs-Hortonworks-as-a-Hadoop-platform-for-a-main-street-e-g-not-Silicon-Valley-giant-enterprise
 - [5] http://www.quora.com/What-distribution-should-I-choose-Cloudera-Hortonworks-or-MapR
+
+**FoundationDB**  
+*C2*  
+What:
+- multi model NoSQL database 
+- what does multi model mean?
+- database that can support multiple models, where a model can be document, graph, relational, key value 
+
+Strengths:
+- can support multiple models in the same database, specifically key value, SQL, document, and graph
+
+Weaknesses:
+- doesn't have support for long transactions - specifically transactions over 5 seconds 
+- doesn't have support for large transactions - ones that exceed 10MB 
+- doesn't have support for large keys or values - keys can't be over 10KB and values can't be over 100KB 
+- essentially, because FoundationDB is so flexible with its multi-model database, the tradeoff is that you get a number of limitations
+- ultimately, you need to ask yourself how much value add the multi model support is 
+
+References:
+- [1] https://foundationdb.com/key-value-store/documentation/known-limitations.html
+- [2] http://en.wikipedia.org/wiki/FoundationDB
+- [3] http://en.wikipedia.org/wiki/Multi-model_database
+- [4] http://blog.foundationdb.com/call-me-maybe-foundationdb-vs-jepsen
+- [5] http://opensourceconnections.com/blog/2013/03/06/why-foundationdb-might-be-all-its-cracked-up-to-be/
+
+
+**Impala**  
+*B5*  
 
 
 

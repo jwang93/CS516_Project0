@@ -7,7 +7,7 @@ Due Date: Jan 21, 2015
       
 ## **Systems**
 
-**1) 1010data**  
+**1010data**  
 *D6*  
 What:  
 - database with spreadsheet interface
@@ -29,7 +29,7 @@ References:
 - [1] https://www.1010data.com/products/detail/1010data-industry-specific-applications
 - [2] http://www.itworld.com/article/2730562/big-data/1010data--the-non-elephant-in-the-big-data-room.html 
 
-**2) Accumulo**    
+**Accumulo**    
 *D2*  
 What:  
 - sorted, distributed key-value store 
@@ -50,7 +50,7 @@ References:
 - [2] http://www.cloudera.com/content/cloudera/en/products-and-services/cdh/accumulo.html
 - [3] http://apache-accumulo.1065345.n5.nabble.com/How-does-Accumulo-compare-to-HBase-td10464.html  
 
-**3) Actian Ingres**  
+**Actian Ingres**  
 *B3*  
 What:  
 - database management system
@@ -70,7 +70,7 @@ References:
 - [1] http://www.actian.com/products/operational-databases/ingres/
 - [2] https://www.princeton.edu/~achaney/tmve/wiki100k/docs/Ingres_%28database%29.html 
 
-**4) Actian Matrix**  
+**Actian Matrix**  
 *C6*  
 What:  
 - analytics database from Actian
@@ -88,7 +88,7 @@ References:
 - [1] http://wwwcdn.actian.com/wp-content/uploads/2014/01/Actian-Matrix-Datasheet.pdf
 
 
-**5) Actian PSQL**  
+**Actian PSQL**  
 *B5*  
 What:
 - yet another database management system from Actian
@@ -105,7 +105,7 @@ References:
 - [1] http://www.actian.com/products/operational-databases/psql/
 
 
-**6) Actian Vector**  
+**Actian Vector**  
 *C6*  
 What:  
 - analytical database system 
@@ -125,7 +125,7 @@ References:
 - [2] http://www.actian.com/about-us/blog/pssst-want-hear-actian-vector-3-5/ 
 - [3] http://www.dbms2.com/2013/04/25/goodbye-vectorwise-farewell-paraccel/
 
-**7) Actian Versant**   
+**Actian Versant**   
 *E1*  
 What:
 - object database 
@@ -144,7 +144,7 @@ References:
 - [2] http://globenewswire.com/news-release/2012/11/21/506794/10013391/en/Versant-Agrees-to-be-Acquired-by-Actian-for-13-00-per-Share.html
 - [3] http://en.wikipedia.org/wiki/Versant_Object_Database
 
-**8) Adabas**  
+**Adabas**  
 *D1*  
 What:
 - database management system from Software AG
@@ -164,7 +164,7 @@ References:
 - [2] http://database-management.findthebest-sw.com/compare/2-9/ADABAS-vs-DB3 
 - [3] http://database-management.findthebest-sw.com/compare/2-30/ADABAS-vs-MySQL
 
-**9) Aerospike**  
+**Aerospike**  
 *C2*  
 What:
 - optimized for flash, in-memory database
@@ -183,7 +183,7 @@ References:
 - [2] http://www.aerospike.com/about-aerospike/
 - [3] http://stackoverflow.com/questions/25443933/comparison-aerospike-vs-cassandra
 
-**10) AffinityDB**   
+**AffinityDB**   
 *E1*  
 What: 
 - platform for information processing, control
@@ -199,32 +199,7 @@ References:
 - [1] http://affinityng.cfapps.io/doc/terminology.html#pathsql
 
 
-
-**11) Allegrograph**  
-*E1*  
-What:
-- specifically a graph database 
-- uses combination of memory and disk allowing for huge scale 
-- utilizes an RDF store (triple store of the form - subject:predicate:object)
-
-Strengths:  
-- huge scale due to its usage of disk 
-- has a java client library that supporst Jena and Sesame 
-- supports SPARQL queries 
-
-Weaknesses:  
-- there are competing graph databases that are open source, Allegro is commercial license
-- not embeddable compared to competitor Neo4J 
-- doesn't support MapReduce? 
-
-References:  
-- [1] http://franz.com/agraph/allegrograph/
-- [2] http://db-engines.com/en/system/AllegroGraph%3BNeo4j%3BVoltDB
-- [3] http://stackoverflow.com/questions/2613357/difference-between-graph-database-neo4j-allegrograph
-- [4] http://vschart.com/compare/allegrograph/vs/neo4j
-
-
-**12) Altibase HDB**   
+**Altibase HDB**   
 *D3*  
 What:
 - hybrid in memory database, hence the name HDB developed by altibase 
@@ -241,7 +216,7 @@ References:
 - [2] http://database-management.findthebest-sw.com/compare/5-36/ALTIBASE-HDB-vs-Oracle 
 
 
-**13) Altibase XDB**   
+**Altibase XDB**   
 *D3*  
 What:
 - XDB stands for extreme in memory database - memory only 
@@ -256,48 +231,7 @@ Weaknesses:
 References:  
 - [1] http://altibase.com/in-memory-database-hybrid-products/xdb/
 
-**14) Altiscale**  
-** I have used Altiscale before at my previous internship at Drawbrdge **  
-*A3*  
-What:
-- company that provides Hadoop cloud services, they run your Hadoop workloads for you 
-- notion of Hadoop as a Service 
-
-Strengths:  
-- easy to use, configurations all handled for you, customer support 
-- cloud nature can handle variability of Hadoop workloads 
- 
-Weaknesses:  
-- expensive - would be much cheaper to roll out your own Hadoop infrastructure 
-- less control over your Hadoop jobs than if you ran it yourself 
-
-References:  
-- [1] https://www.altiscale.com/why-altiscale/
-
-
-**19) Apache Tajo**   
-*B3*  
-What:
-- relational, distributed data warehouse system built on Hadoop 
-- SQL query processing engine 
-- one of the growing number of SQL-on-Hadoop frameworks 
-
-Strengths:  
-- can adjust query processing based on: user queries, characteristics of data, cluster status
-- supports SQL standards which gives it a lower barrier to entry 
-- great performance (way better than Hive) and better than Impala on: filters, group by, join, filter scan 
-
-Weaknesses:  
-- worse than Impala when you do a union and then join
-- smaller community as it is developed in Korea may not make it worth it when you have really good alternatives in Impala and Presto 
-
-References:  
-- [1] http://mail-archives.apache.org/mod_mbox/tajo-dev/201305.mbox/%3CCACZfFK6PNE+AuNX6CQ0WD784ZxUavEykEKa-rWFMXp0xdyAHmg@mail.gmail.com%3E
-- [2] http://tajo.apache.org/
-- [3] http://blogs.gartner.com/nick-heudecker/apache-tajo-enters-the-sql-on-hadoop-space/
-- [4] http://blog.matthewrathbone.com/2014/06/08/sql-engines-for-hadoop.html#apache-tajotajo
-
-**20) ArangoDB**   
+**ArangoDB**   
 *B2*  
 What: 
 - open source, NoSQL database 
@@ -319,7 +253,7 @@ References:
 - [3] http://stackoverflow.com/questions/26704134/mongodb-neo4j-vs-orientdb-vs-arangodb
 
 
-**21) Attivio**   
+**Attivio**   
 *A1*  
 What:
 - working on enterprise search and discovery 
@@ -338,27 +272,7 @@ References:
 - [2] http://www.cominvent.com/2009/02/11/attivio-promises-to-bridge-the-gap/
 - [3] http://www.realstorygroup.com/Blog/1294-How-Fast-is-Attivio
 
-**22) AWS DynamoDB**   
-*E2*  
-What:
-- NoSQL database service 
-- fully managed database that supports document and key value data models 
-
-Strengths:  
-- great for lookup queries 
-- persistent store unlike Redis which is for temporal data 
-- schema free, lightweight 
-
-Weaknesses:  
-- join queries 
-- good for specific well defined tasks but it seems like it's not full featured enough to be a standalone DB solution to serve your entire system 
-
-References:  
-- [1] http://aws.amazon.com/dynamodb/
-- [2] http://db-engines.com/en/system/DynamoDB%3BMySQL
-- [3] http://www.quora.com/How-does-one-choose-DynamoDB-versus-Redis-ElastiCache-on-AWS
-
-**24) AWS ElastiCache with Redis**  
+**AWS ElastiCache with Redis**  
 *E2*  
 What: 
 - same thing as ElastiCache, just that you are using Redis rather than Memcached as the memory caching service 
@@ -373,7 +287,7 @@ References:
 - [1] http://aws.amazon.com/elasticache/
 - [2] http://stackoverflow.com/questions/21175941/redis-amazon-ec2-vs-elasticache
 
-**25) AWS EMR**   
+**AWS EMR**   
 *A4*  
 What:
 - stands for Elastic Mapreduce 
@@ -395,7 +309,7 @@ References:
 - [3] http://engineering.pinterest.com/post/92742371919/powering-big-data-at-pinterest
 
 
-**26) AWS Kinesis**  
+**AWS Kinesis**  
 *A2*  
 What: 
 - fully managed cloud based service for realtime processing of large data streams (think competitor to Kafka, Spark Streaming)
@@ -414,7 +328,7 @@ References:
 - [3] http://gworley3.blogspot.com/2013/11/amazon-kinesis-compared-to-storm.html
 - [4] http://diamondstream.com/amazon-kinesis-big-real-time-data-processing-solution/
 
-**29) AWS SimpleDB**  
+**AWS SimpleDB**  
 *E2*  
 What:
 - Amazon's non relational data store 
@@ -434,26 +348,8 @@ References:
 - [2] http://aws.amazon.com/simpledb/
 
 
-**32) Azure SQL Database**  
-*D5*  
-What:
-- Microsoft's proprietary relational database as a service 
 
-Strengths:
-- similar to many of the AWS products, SQL Database can dynamically scale up to thousands of machines based on load 
-- they manage the service for you so you don't need to devote engineering resources to maintenance 
-- pretty cheap compared to AWS RDS because Amazon dedicates resources to an individual entity whereas Azure sharees the resources 
-
-Weaknesses:
-- size limitations: Azure only allows up to 50GB whereas RDS allows for 1TB 
-- doesn't handle data restoration as well as RDS, for Azure you need to manually configure and set up how you want to do backups where RDS just does 8 days of backups automatically for you 
-- fewer features than RDS which has the full fledged MySQL feature set 
-
-References: 
-- [1] http://azure.microsoft.com/en-us/services/sql-database/
-- [2] https://www.develop.com/sqlazurevsamazonrds
-
-**33) BerkeleyDB**  
+**BerkeleyDB**  
 *D2*  
 What:
 - produced by Oracle, claiming to be an open source and embeddable storage engine 
@@ -475,7 +371,7 @@ References:
 - [4] http://perfectmarket.com/nosql-solution-evaluation-and-comparison-mongodb-vs-redis-tokyo-cabinet-and-berkeley-db-chart/
 - [5] http://blog.cppcms.com/post/8
 
-**34) BigCache**  
+**BigCache**  
 *E4*  
 - caching API developed by Google that is backed on Amazon S3
 - could hardly find any information about BigCache 
@@ -494,7 +390,7 @@ References:
 - [1] https://code.google.com/p/bigcache/
 - [2] http://java.dzone.com/announcements/bigcache-open-source-heap
 
-**35) BigMemory**  
+**BigMemory**  
 *E4*  
 What:
 - can describe this as the data grid and caching market 
@@ -516,7 +412,7 @@ References:
 - [4] http://www.softwareag.com/corporate/products/terracotta/in-memory_data_mgmt/overview/default.asp
 
 
-**36) BitYota**  
+**BitYota**  
 *D6*  
 What:
 - tagline of "Data Warehouse as a service"
@@ -538,7 +434,7 @@ References:
 - [4] http://cloudcomputingeurope.sys-con.com/node/2466082
 
 
-**38) Cassandra.io**  
+**Cassandra.io**  
 *D2*  
 What:
 - a hosted and managed instance of Cassandra that is made accessible via a RESTful API 
@@ -553,7 +449,7 @@ Weaknesses:
 References:
 - [1] https://bighadoop.wordpress.com/2012/09/09/heroku-and-cassandra-cassandra-io-restful-apis/
 
-**39) CitusDB**  
+**CitusDB**  
 *B5*  
 What:
 - database system focused on scaling out PostgreSQL
@@ -574,7 +470,7 @@ References:
 - [3] http://www.citusdata.com/blog/86-making-postgresql-scale-hadoop-style
 
 
-**40) ClearDB**  
+**ClearDB**  
 *D5*  
 What:
 - database for MySQL applications 
@@ -594,7 +490,7 @@ References:
 - [3] http://www.sitepoint.com/database-as-a-service-mysql-in-the-cloud/
 
 
-**41) Cloudant**  
+**Cloudant**  
 *E2*  
 What:
 - fully managed NoSQL Database as a service 
@@ -619,7 +515,7 @@ References:
 - [5] https://getsatisfaction.com/application_craft/topics/anyone_have_experience_with_cloudant_couchdb
 
 
-**42) CloudBird**  
+**CloudBird**  
 *D2*  
 What:
 - RavenDB in the cloud
@@ -638,7 +534,7 @@ References:
 - [2] http://db-engines.com/en/system/MongoDB%3BRavenDB
 - [3] http://ayende.com/blog/136196/when-should-you-use-ravendb
 
-**44) CloudTran**  
+**CloudTran**  
 *E5*  
 What:
 -transaction management product which gives transactions running in distributed or cloud based environments ACID properties
@@ -658,7 +554,7 @@ References:
 - [3] http://en.wikipedia.org/wiki/ACID#Atomicity
 - [4] http://www.gridgain.com/in-memory-database-vs-in-memory-data-grid-revisited/
 
-**45) Clusrix**  
+**Clusrix**  
 *C4*  
 What:
 - ecommerce databaes good for online retailers
@@ -681,7 +577,7 @@ References:
 - [3] http://blog.clustrix.com/2012/12/11/what-does-it-mean-to-say-clustrix-is-a-mysql-replacement/
 
 
-**46) CockroachDB**  
+**CockroachDB**  
 *C3*  
 What:
 - transactional geo-replicated data store 
@@ -701,7 +597,7 @@ References:
 - [3] http://www.quora.com/What-are-some-good-uses-for-CockroachDB-the-open-source-implementation-of-Google-Spanner
 - [4] http://www.wired.com/2014/07/cockroachdb/
 
-**47) CodeFutures**  
+**CodeFutures**  
 *C4*  
 What:
 - big data company that has a suite of products
@@ -722,7 +618,7 @@ References:
 - [4] http://www.quora.com/What-kind-of-layer-should-there-be-between-the-application-level-and-the-database-level-in-order-to-scale-out
 
 
-**48) Compose**  
+**Compose**  
 *D2*  
 What:
 - company that offers production ready, cloud hosted services for: mongodb, elasticsearch, redis, postgresql 
@@ -740,7 +636,7 @@ References:
 - [2] http://www.quora.com/As-a-website-developer-should-i-manage-database-myself-or-give-control-of-this-important-piece-of-my-website-to-someone-else-who-in-fact-is-just-another-startup-MongoHQ-compose-io-Note-I-have-been-playing-around-with-MongoDb-and-really-liked-using-it-but-Im-not-a-master-of-this-domain
 
 
-**49) Continuent**  
+**Continuent**  
 *D4*  
 What:
 - provide services for database clustering and replication
@@ -763,7 +659,7 @@ References:
 - [2] http://www.techopedia.com/definition/17/clustering-databases
 - [3] http://www.quora.com/Is-MySQL-Proxy-ready-for-production-use
 
-**50) CortexDB**  
+**CortexDB**  
 *B2*  
 What:
 - NoSQL database technology that is schema-less
@@ -781,7 +677,7 @@ References:
 
 
 
-**53) Database.com**  
+**Database.com**  
 *D5*  
 What:
 - cloud database run by Salesforce
@@ -801,7 +697,7 @@ References:
 - [2] http://www.quora.com/What-are-the-pros-cons-of-hosting-a-database-on-Salesforces-Database-com-vs-Amazons-Relational-Database-Service
 - [3] http://www.infoworld.com/article/2624989/cloud-computing/what-salesforce-s-database-com-really-means.html
 
-**55) DataStax Enterprise**  
+**DataStax Enterprise**  
 *C2*  
 What:
 - platform built on Apache Cassandra for analytics for online database applications 
@@ -818,7 +714,7 @@ References:
 - [2] http://stackoverflow.com/questions/24564725/apache-cassandra-vs-datastax-cassandra
 
 
-**56) DataTorrent**  
+**DataTorrent**  
 *A2*  
 What:
 - realtime streaming platform for enterprise 
@@ -840,7 +736,7 @@ References:
 - [3] http://hortonworks.com/partner/datatorrent/
 - [4] https://mybigdatajourney.wordpress.com/2014/07/24/open-source-storm-vs-commercially-available-data-torrent/
 
-**57) Datomic**  
+**Datomic**  
 *C3*  
 What:
 - transactional, cloud-ready, distributed database 
@@ -859,7 +755,7 @@ References:
 - [2] http://en.wikipedia.org/wiki/Datomic
 - [3] http://comments.gmane.org/gmane.comp.db.datomic.user/9
 
-**58) DeepDB**  
+**DeepDB**  
 *D4*  
 What:
 - branded as a general purpose database for big data 
@@ -881,7 +777,7 @@ References:
 - [2] http://www.dbms2.com/2013/04/14/deep-information-sciences-deepdb/
 - [3] http://www.severalnines.com/news/article/database-clustering/is-deepdb-a-good-general-purpose-choice-for-big-data-needs/801612841
 
-**59) Documentum xDB**  
+**Documentum xDB**  
 *C1*  
 What:
 - database out of EMC, interesting because it is a native XML database 
@@ -901,7 +797,7 @@ References:
 - [1] http://www.emc.com/products/detail/software2/documentum-xdb.htm
 - [2] http://en.wikipedia.org/wiki/XML_database
 
-**60) Drizzle**  
+**Drizzle**  
 *C4*  
 What:
 - open source cloud RDBMS forked off MySQL 
@@ -926,28 +822,7 @@ References:
 - [4] http://www.linuxuser.co.uk/news/mysql-successor-drizzle-reaches-maturity
 - [5] http://www.quora.com/Why-is-Drizzle-dead
 
-**61) Ehcache**  
-*E5*  
-What:
-- basic memory cache used a lot by Java programs developed by Terracotta 
-
-Strength:
-- supports both memory and disk stores 
-- scales up well 
-- fast recovery from outages 
-- very fast performance (better than memcached) because it runs in the same JVM process as the application (this is not the case for something like redis 
-
-Weaknesses:
-- doesn't support as many native clients as Memcached, which has clients in all major languages 
-- ties you to the JVM 
-
-References:
-- [1] http://ehcache.org/
-- [2] http://en.wikipedia.org/wiki/Ehcache
-- [3] http://www.quora.com/Distributed-Caching/Memcached-vs-Ehcached-Which-is-better-and-why
-- [4] http://stackoverflow.com/questions/18910822/why-is-ehcache-faster-than-memcache
-
-**63) EnterpriseDB**  
+**EnterpriseDB**  
 *B3*  
 What:
 - enterprise software, solutions, tools for PostgreSQL 
@@ -968,7 +843,7 @@ References:
 - [3] http://www.enterprisedb.com/solutions/mysql-vs-postgresql/why-move-mysql-postgres-plus
 
 
-**64) Exasol**  
+**Exasol**  
 *C5*  
 What:
 - database management software company with the primary product of EXASolution 
@@ -991,7 +866,7 @@ References:
 - [3] http://www.informationweek.com/software/information-management/comparing-vertica-paraccel-and-exasol/d/d-id/1071118?
 - [4] http://www.it-director.com/technology/data_mgmt/content.php?cid=10541
 
-**65) FairCom**  
+**FairCom**  
 *C3*  
 What:
 - database company known for its C-tree technology 
@@ -1012,7 +887,7 @@ References:
 - [3] http://en.wikipedia.org/wiki/C-treeACE
 
 
-**66) FatDB**  
+**FatDB**  
 *C2*  
 What:
 - no information found
@@ -1031,20 +906,92 @@ References:
 - [2] http://www.infoworld.com/article/2676583/database/fathomdb-launches-cloud-database.html
 
 
-**68) FeedZai**
-*A2*
+**FeedZai**  
+*A2*  
+What:
+- big data company trying to detect fraud in commerce 
+- uses machine learning on top of its massive amount of data 
 
-**69) Firebird**
-*B3*
+Strengths:
+- handling fraud means insights need to be uncovered quickly, which is why FeedZai is big on realtime processing 
 
-**70) FlockDB**
-*D1*
+Weaknesses:
 
-**71) FoundationDB**
-*C2*
+References:
+- [1] https://www.feedzai.com/home/big-data-insight/
+- [2] http://en.wikipedia.org/wiki/Feedzai
+- [3] http://www.forbes.com/sites/tomgroenfeldt/2014/02/03/feedzai-brings-machine-learning-and-data-science-to-payment-fraud/
 
-**72) Galera**
-*D4*
+**Firebird**  
+*B3*  
+What:
+- open source SQL RDBMS that runs on all major operating systems - Windows, Linux, Unix 
+- what you find is that the main differentiators from these RDBMS systems is how they choose to index their data 
+- that is what leads to the tradeoffs in performance as certain indexing paradigms are better for certain data sets and operations 
+
+Strengths:
+- many of the basic features you would want in a database such as ACID transactions, referential integrity
+- apparently there is little to no need for database admins / low maintenance 
+- because it runs on many platforms you can avoid being locked into a vendor 
+- open source, which should give you flexibility to tinker with it to your use case 
+
+Weaknesses:
+- many people looking for a Firebird solution would already be using MySQL and generally people don't want to migrate from what they currently have if what they currently have works 
+- MySQL is supported on more platforms
+- MySQL has a much larger community 
+
+References:
+- [1] http://www.dbforums.com/showthread.php?793966-MySQL-vs-Firebird
+- [2] http://www.firebirdsql.org/
+- [3] http://en.wikipedia.org/wiki/Firebird_(database_server)
+- [4] http://www.firebirdsql.org/manual/migration-mssql-pros-cons.html
+
+**FlockDB**  
+*D1*  
+What:
+- one of the distributed graph databases developed originally by twitter 
+- graph database: a database that uses graph structures for queries with nodes, edges, and properties to represent the data 
+- sample query you would like a graph database for: What's the intersection of people I follow and people who are following Obama 
+
+Strengths:
+- has all the normal stuff like: open source, distributed, fault-tolerant 
+- optimized for very large adjacency lists, fast reads and writes 
+- much simpler than other graph databases such as Neo4j 
+
+Weaknesses:
+- not good for graph traversal operations 
+- because FlockDB is built with a rather smaller use case, it doesn't have as many features as some of the other graph databases 
+
+References:
+- [1] http://en.wikipedia.org/wiki/FlockDB
+- [2] https://blog.twitter.com/2010/introducing-flockdb
+- [3] https://github.com/twitter/flockdb
+- [4] http://stackoverflow.com/questions/2629692/how-does-flockdb-compare-with-neo4j
+
+
+**Galera**  
+*D4*  
+What:
+- open sourced database cluster 
+- based on synchronous replication
+- these things are called high availability solutions 
+
+Strengths:
+- there is replication 
+- high system uptime
+- scales well
+
+Weaknesses:
+- cost you money 
+- you may not need it over the standard MySQL cluter 
+
+
+References:
+- [1] http://galeracluster.com/
+- [2] http://www.quora.com/Who-is-using-MySQL-Galera-in-production
+- [3] http://www.percona.com/live/mysql-conference-2012/sessions/how-evaluate-which-mysql-high-availability-solution-best-suits-you
+
+
 
 **73) GenieDB**
 *C4*
@@ -1106,17 +1053,55 @@ References:
 *C6*
 
 
+**94) HPCC**  
+*B6*  
+
+**95) HyperDex**  
+*D2*  
+
+**96) HypergraphDB**  
+*E1*
+
+**97) Hypertable**  
+*C2*  
+
+**98) IBM Big SQL**  
+*B4*
+
+**99) IBM BigInsights**  
+*A5*
+
+**100) IBM DB2**  
+*B4*  
+
+**101) IBM eXtreme Scale**  
+*E6*  
+
+**102) IBM IMS**  
+*D1*  
+
+**103) IBM InfoSphere**  
+*C6*  
+
+**104) IBM PureData**  
+*B4*  
+
+**106) InfiniSpan**  
+*E6*  
+
+**107) InfiniSQL**  
+*C3*  
 
 
+**108) InfiniteGraph**  
+*E1*  
 
 
+**109) InfluxDB**  
+*D6*  
 
-
-
-
-
-
-
+**110) Infobright**  
+*B4*  
 
 
 
