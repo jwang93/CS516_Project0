@@ -49,3 +49,28 @@ References:
 - [5] http://opensourceconnections.com/blog/2013/03/06/why-foundationdb-might-be-all-its-cracked-up-to-be/
 
 
+
+**FlockDB**  
+*D1*  
+What:
+- one of the distributed graph databases developed originally by twitter 
+- graph database: a database that uses graph structures for queries with nodes, edges, and properties to represent the data 
+- sample query you would like a graph database for: What's the intersection of people I follow and people who are following Obama 
+
+Strengths:
+- has all the normal stuff like: open source, distributed, fault-tolerant 
+- optimized for very large adjacency lists, fast reads and writes 
+- much simpler than other graph databases such as Neo4j 
+
+Weaknesses:
+- not good for graph traversal operations 
+- because FlockDB is built with a rather smaller use case, it doesn't have as many features as some of the other graph databases 
+
+References:
+- [1] http://en.wikipedia.org/wiki/FlockDB
+- [2] https://blog.twitter.com/2010/introducing-flockdb
+- [3] https://github.com/twitter/flockdb
+- [4] http://stackoverflow.com/questions/2629692/how-does-flockdb-compare-with-neo4j
+
+
+

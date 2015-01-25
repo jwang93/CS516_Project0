@@ -33,3 +33,46 @@ Weaknesses:
 References:
 - [1] http://affinityng.cfapps.io/doc/terminology.html#pathsql
 
+
+**ArangoDB**   
+*B2*  
+What: 
+- open source, NoSQL database 
+- multi model database 
+
+Strengths:  
+- great for documents, graphs, and key values
+- supports a SQL like query language making it easy to use
+- supports some JavaScript extensions 
+- multi model database allows for different data models (graphs and documents) in the same application that might even need to be mixed in the same query 
+
+Weaknesses:  
+- not embeddable like its competitor OrientDB 
+- the restriction on the max value size is 256MB compared to 2GB for a competitor 
+
+References:  
+- [1] https://www.arangodb.com/
+- [2] http://vschart.com/compare/arangodb/vs/orientdb
+- [3] http://stackoverflow.com/questions/26704134/mongodb-neo4j-vs-orientdb-vs-arangodb
+
+
+
+
+**CortexDB**  
+*B2*  
+What:
+- NoSQL database technology that is schema-less
+
+Strengths:
+- temporal database, meaning that it understands time for transactions
+- security system
+- distributed
+
+Weaknesses:
+
+References:
+- [1] http://www.odbms.org/wp-content/uploads/2014/04/CortexDB.pdf
+- [2] http://www.odbms.org/2014/04/cortexdb/
+
+
+

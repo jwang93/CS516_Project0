@@ -200,4 +200,26 @@ References:
 - [5] http://stackoverflow.com/questions/25267204/hadoop-vs-spark
 
 
+**AWS EMR**   
+*A4*  
+What:
+- stands for Elastic Mapreduce 
+- uses Hadoop to do the data distribution and computation but can also use Spark or Presto
+
+Strengths:  
+- the ability to get computation on tap 
+- lots of the details are managed for you 
+- lowest barrier to usage 
+
+Weaknesses:  
+- keeping it running is expensive 
+- doesn't have features like automatic cluster lifecycle management, automatically scaling up and down
+- known to get unstable at scale 
+
+References: 
+- [1] http://aws.amazon.com/elasticmapreduce/
+- [2] http://www.quora.com/What-is-your-feedback-of-using-Amazons-EMR-or-Hadoop-on-EC2-or-CDH-for-Telecoms-data-CDR-Recharge-Transactions-others-event-data
+- [3] http://engineering.pinterest.com/post/92742371919/powering-big-data-at-pinterest
+
+
 

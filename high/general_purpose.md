@@ -38,3 +38,31 @@ Weaknesses:
 References: 
 - [1] http://azure.microsoft.com/en-us/services/sql-database/
 - [2] https://www.develop.com/sqlazurevsamazonrds
+
+
+
+**Firebird**  
+*B3*  
+What:
+- open source SQL RDBMS that runs on all major operating systems - Windows, Linux, Unix 
+- what you find is that the main differentiators from these RDBMS systems is how they choose to index their data 
+- that is what leads to the tradeoffs in performance as certain indexing paradigms are better for certain data sets and operations 
+
+Strengths:
+- many of the basic features you would want in a database such as ACID transactions, referential integrity
+- apparently there is little to no need for database admins / low maintenance 
+- because it runs on many platforms you can avoid being locked into a vendor 
+- open source, which should give you flexibility to tinker with it to your use case 
+
+Weaknesses:
+- many people looking for a Firebird solution would already be using MySQL and generally people don't want to migrate from what they currently have if what they currently have works 
+- MySQL is supported on more platforms
+- MySQL has a much larger community 
+
+References:
+- [1] http://www.dbforums.com/showthread.php?793966-MySQL-vs-Firebird
+- [2] http://www.firebirdsql.org/
+- [3] http://en.wikipedia.org/wiki/Firebird_(database_server)
+- [4] http://www.firebirdsql.org/manual/migration-mssql-pros-cons.html
+
+
