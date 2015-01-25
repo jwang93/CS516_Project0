@@ -1,4 +1,35 @@
 
+**Impala**  
+*B5*  
+What:
+- analytic database (also known as query engine) for Hadoop designed by Cloudera 
+- often compared against Spark and Hive 
+- the advantage of interactive SQL is that you can eliminate the need for temporary data being transferred while you are still querying 
+
+Strengths:
+- designed to do massively parallel porcessing (MPP)
+- more focused on enterprise customers and use cases 
+- Impala, although open source, is still an enterprise product 
+- gets good performance for interactive SQL queries on top of Hadoop when compared to Hive - compatible with a lot of other Hadoop software and frameworks such as Hive and Pig 
+
+Weaknesses:
+- one of the big drawbacks is that Impala does not allow for in memory processing, which its competitor Spark supports 
+- early versions of Impala (and maybe still today) did not support fault tolerance 
+- that means that if a node failed in the middle of processing, the entire query would have to be run again 
+
+References:
+- [1] http://www.quora.com/Does-Cloudera-Impala-have-any-drawbacks-when-compared-with-Hive
+- [2] https://gigaom.com/2014/07/03/cloudera-impalas-it-for-interactive-sql-on-hadoop-but-everything-else-will-move-to-spark/
+- [3] http://www.quora.com/How-does-Cloudera-Impala-compare-to-Apache-Shark-now-part-of-Spark
+- [4] http://www.cloudera.com/content/cloudera/en/products-and-services/cdh/impala.html
+- [5] http://en.wikipedia.org/wiki/Cloudera_Impala
+- [6] http://en.wikipedia.org/wiki/Massively_parallel_(computing)
+- [7] http://www.quora.com/How-does-Cloudera-Impala-compare-to-Apache-Shark-now-part-of-Spark
+- [8] http://www.infoq.com/news/2014/02/SQL-Apache-Hadoop-Impala-Hive
+
+
+
+
 **Altiscale**  
 ** I have used Altiscale before at my previous internship at Drawbrdge **  
 *A3*  

@@ -1,4 +1,59 @@
 
+**Redis**  
+*C2*  
+What: 
+- open sourced key store developed by Pivotal Software and VMWare 
+- probably the most popular key store 
+- generally holds all data in memory 
+- essentially almost always the case that Redis will always be better than memcached 
+
+Strengths:
+- some other key stores (such as memcached) only support strings but redis supports abstract data types such as lists, sets, hashes
+- super fast at caching - best performance for its use case which is key value data store 
+
+Weaknesses:
+- totally in memory so it requires a lot of RAM
+- doesn't scale horizontally as well as memcached because redis is more complex 
+- can't handle queries as well as something like MongoDB 
+- Redis is very good for a specific use case of data retrieval but if you are unclear about your use case it is oftentimes better to go with a more rounded system such as MongoDB 
+
+References:
+- [1] http://redis.io/
+- [2] http://en.wikipedia.org/wiki/Redis
+- [3] http://www.infoworld.com/article/2825890/application-development/why-redis-beats-memcached-for-caching.html
+- [4] http://stackoverflow.com/questions/10558465/memcache-vs-redis
+- [5] http://stackoverflow.com/questions/5400163/when-to-redis-when-to-mongodb
+- [6] http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
+- [7] http://www.quora.com/What-is-the-difference-between-MongoDB-and-Redis
+
+
+
+**Voldemort**  
+*C2*   
+What:
+- distributed, fault tolerant data store built by Linkedin that operates as a normal key-value data store
+- you can liken it to a large distributed hash table 
+
+Strengths:
+- combination of in memory caching with storage system making the storage system fast
+- scales horizontally well for reads and writes 
+- very fast - over 10,000 operations per second, although other competitors such as Cassandra can also deliver this performance 
+- couple sources have cited its super simple and easy to use API 
+
+Weaknesses:
+- functionality is limited to that of just key-value store whereas Cassandra offers more features such as range queries 
+- isn't much structure to the data; Cassandra provides something called column families which give the data more sturcture 
+- not as popular as Cassandra and thus not as well supported
+
+References:
+- [1] http://en.wikipedia.org/wiki/Voldemort_(distributed_data_store)
+- [2] http://www.project-voldemort.com/voldemort/
+- [3] http://stackoverflow.com/questions/2252163/how-does-voldemort-compare-to-cassandra
+- [4] http://stackoverflow.com/questions/17341527/nosql-db-hbase-vs-voldemort-vs-couchbase
+- [5] http://blog.medallia.com/product-and-innovation/choosing-a-key-value-storage-system-cassandra-vs-voldemort/
+
+
+
 **AWS ElastiCache**   
 *E4*  
 What: 

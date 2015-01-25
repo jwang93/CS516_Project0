@@ -4,16 +4,6 @@ NetID: jmw86
 Due Date: Jan 21, 2015
   
     
-      
-## **Main Systems**
-
-**Given that I only have so much time, these are the systems that I focused on.**  
-My criteria for choosing these systems were:
-- widely used in industry 
-- ample reviews, documentation 
-- known for being a forerunner for its class 
-- referenced widely
-- compared against frequently 
 
 
 
@@ -21,16 +11,27 @@ My criteria for choosing these systems were:
 
 
 
+**MongoDB** 
+*E2*  
+
+**MongoLab**
+*E2*  
+
+**MySQL**  
+*C4*  
 
 
+**IBM DB2**  
+*C4*  
 
+**MemSQL**  
+*C3*  
 
+**Riak**  
+*C2*  
 
-
-
-**Impala**  
-*B5*  
-
+**Neo4J**  
+*C1*  
 
 
 

@@ -1,4 +1,34 @@
 
+**Redis**  
+*C2*  
+What: 
+- open sourced key store developed by Pivotal Software and VMWare 
+- probably the most popular key store 
+- generally holds all data in memory 
+- essentially almost always the case that Redis will always be better than memcached 
+
+Strengths:
+- some other key stores (such as memcached) only support strings but redis supports abstract data types such as lists, sets, hashes
+- super fast at caching - best performance for its use case which is key value data store 
+
+Weaknesses:
+- totally in memory so it requires a lot of RAM
+- doesn't scale horizontally as well as memcached because redis is more complex 
+- can't handle queries as well as something like MongoDB 
+- Redis is very good for a specific use case of data retrieval but if you are unclear about your use case it is oftentimes better to go with a more rounded system such as MongoDB 
+
+References:
+- [1] http://redis.io/
+- [2] http://en.wikipedia.org/wiki/Redis
+- [3] http://www.infoworld.com/article/2825890/application-development/why-redis-beats-memcached-for-caching.html
+- [4] http://stackoverflow.com/questions/10558465/memcache-vs-redis
+- [5] http://stackoverflow.com/questions/5400163/when-to-redis-when-to-mongodb
+- [6] http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
+- [7] http://www.quora.com/What-is-the-difference-between-MongoDB-and-Redis
+
+
+
+
 **AWS ElastiCache**   
 *E4*  
 What: 
