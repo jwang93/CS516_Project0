@@ -8,17 +8,17 @@ Due Date: Jan 21, 2015
 ## **Systems**
 
 
-**73) GenieDB**
-*C4*
 
-**74) Gigaspaces XAP**
-*E4*
 
-**75) Giraph**
-*E1*
 
-**76) Google BigQuery**
-*D5*
+
+
+
+
+
+
+
+
 
 **77) Google App Engine Datastore**
 *D2*
@@ -86,8 +86,6 @@ Due Date: Jan 21, 2015
 **99) IBM BigInsights**  
 *A5*
 
-**100) IBM DB2**  
-*B4*  
 
 **101) IBM eXtreme Scale**  
 *E6*  

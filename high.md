@@ -7,5 +7,13 @@ Due Date: Jan 21, 2015
 
 
 
+Teradata
 
+Oracle Exadata
+
+StormDB
+
+Splunk 
+
+SQLite 
 

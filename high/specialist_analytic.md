@@ -28,6 +28,32 @@ References:
 
 
 
+**Google BigQuery**  
+*D5*
+What:
+- service from Google that allows you to interactively query using a SQL-like interface over massive amounts of data 
+- you import all your data into Google 
+- the service is built on Google's underlying infrastructure 
+- marketed as a more powerful, faster alternative to Hadoop although it can be used in conjuction with it 
+
+Strengths:
+- easy to access and use this service 
+- Google provides a web UI and a RESTful API 
+- performance over Hadoop 
+
+Weaknesses:
+- costs money 
+- not open source, enterprise 
+
+References:
+- [1] https://gavinbadcock.wordpress.com/2013/02/06/googles-bigquery-vs-hadoop-complimentors-or-competitors/
+- [2] https://cloud.google.com/bigquery/what-is-bigquery
+- [3] http://en.wikipedia.org/wiki/BigQuery
+- [4] http://news.dice.com/2013/04/15/googles-bigquery-vs-hadoop-a-matchup-2/
+- [5] http://www.megapivot.com/blog/posts/redshift-vs-bigquery-vs-hadoop.html
+
+
+
 
 **Apache Drill**   
 *B4*  
