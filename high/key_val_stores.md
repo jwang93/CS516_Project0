@@ -1,4 +1,31 @@
 
+**Riak**  
+*C2*  
+What:
+- open source distributed database developed by Basho
+- also has the functionality of a NoSQL system, key value data store 
+- compared to Cassandra, both of which are based off of Amazon's Dynamo  
+
+Strengths:
+- Basho cites the strengths of Riak being 
+- low latency: getting great performance even under heavy load
+- scalable and available
+- has a built in REST server making it easy to set up and use, operationally simple to maintain
+- one of the problems with Mongo is the working set needs to fit in memory, which is not a requirement for Riak
+
+Weaknesses:
+- if you want to do multi data center replication, you need to purchase the enterprise product 
+- can't perform the range query as fast as Cassandra due to the differences in architecture between the two 
+
+References:
+- [1] http://basho.com/riak/
+- [2] http://en.wikipedia.org/wiki/Riak
+- [3] https://blog.mozilla.org/data/2010/05/18/riak-and-cassandra-and-hbase-oh-my/
+- [4] http://nosql.mypopescu.com/post/30830925905/from-mongodb-to-riak-at-shareaholic
+- [5] http://basho.com/riak-vs-cassandra/
+
+
+
 **Redis**  
 *C2*  
 What: 

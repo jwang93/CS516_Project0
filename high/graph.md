@@ -22,6 +22,70 @@ References:
 - [4] http://vschart.com/compare/allegrograph/vs/neo4j
 
 
+**Neo4J**  
+*C1*  
+What:
+- open sourced graph database
+- often compared to Titan
+- data is stored as either an edge, node, or attribute 
+- edges and nodes can have multiple attributes 
+
+Strengths:
+- data is stored on disk, not a significant memory requirement 
+- very fast because the storage of data is on the same machine as where the query engine is on
+- that does lead to limitations such as inability to scale horizontally	
+- as with any graph database, it is really good at looking up relationships between nodes 
+- so if you are trying to solve any kind of graph problem: Pinterest, Facebook, Linkedin
+
+Weaknesses:
+- cannot be sharded which means that all the data needs to be kept in one server 
+- one of the competitors - Titan - can scale horizontally
+- scaling horizontally vs scaling vertically
+- scaling horizontally (preferred) is simply adding more servers
+- scaling vertically (what Neo4j does) is adding more resources to a server 
+
+References:
+- [1] http://neo4j.com/
+- [2] http://en.wikipedia.org/wiki/Neo4j
+- [3] http://www.slideshare.net/seenickcode/migrating-from-mongodb-to-neo4j-lessons-learned
+- [4] https://groups.google.com/forum/#!topic/neo4j/mts6H9Py-2I
+- [5] http://www.quora.com/What-are-the-pros-and-cons-of-using-a-graph-database
+- [6] http://stackoverflow.com/questions/17269306/anybody-tried-neo4j-vs-titan-pros-and-cons
+- [7] https://groups.google.com/forum/#!msg/aureliusgraphs/vkQkzjN8fo0/9YYgqI4TA0QJ
+- [8] http://stackoverflow.com/questions/5401992/what-does-scale-horizontally-and-scale-vertically-mean
+
+
+
+
+**MySQL**  
+*C4*  
+What:
+- one of the most popular open source RDBMS currently developed by Oracle
+- it is used heavily for web development as it is a critical component of the LAMP stack
+
+Strengths:
+- learning curve is pretty low compared to Postgres
+- getting Postgres configured, creating a user, etc, was a bit of pain
+- free to use 
+- can run on Linux, which is a draw because that is the operating system of choice for many web servers 
+
+Weaknesses:
+- not as mature as other open sourced databases such as PostgreSQL
+- development is not community driven but rather driven by Oracle 
+- this can actually be a strength though, it depends on whether you value a slower more robust enterprise development
+- from a performance standpoint, I've seen people citing that Postgres benchmarks a little better than MySQL but the difference is marginal 
+
+References:
+- [1] http://www.mysql.com/
+- [2] http://en.wikipedia.org/wiki/MySQL
+- [3] http://www.smartfile.com/blog/the-pros-and-cons-of-mysql/
+- [4] https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
+- [5] http://stackoverflow.com/questions/4779029/why-is-mysql-used-so-often-in-web-development
+- [6] http://www.sitepoint.com/forums/showthread.php?34311-Why-is-MySQL-so-popular
+- [7] http://www.quora.com/Why-is-MySQL-more-popular-than-PostgreSQL
+- [8] http://www.wikivs.com/wiki/MySQL_vs_PostgreSQL
+
+
 
 
 **FoundationDB**  

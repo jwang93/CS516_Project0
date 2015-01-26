@@ -1,4 +1,32 @@
 
+
+
+**IBM DB2**  
+*C4*  
+What:
+- family of database servers released by IBM dating back to the 1980s 
+- traditionally have supported the relational model
+- however, in recent years to meet the new demand, they have experimented with document oriented models are well 
+
+Strengths:
+- DB2 is more of an enterprise product although there are many enterprises that use open sourced products like MySQL
+- being enterprise and more mature comes with a standard suite of features like disaster recovery, high availability, scaling 
+- can store XML natively and retrieve them using xPath, xQuery 
+
+Weaknesses:
+- if you are looking for something simpler there are better options such as MySQL
+- like every enterprise product, will cost you money, which is unattractive especially when there are free alternatives 
+
+References:
+- [1] http://www-01.ibm.com/software/data/db2/
+- [2] http://en.wikipedia.org/wiki/IBM_DB2
+- [3] http://www.ehow.com/info_12106599_advantages-db2.html
+- [4] http://db-engines.com/en/system/DB2%3BMySQL
+- [5] http://stackoverflow.com/questions/9299127/mysql-vs-db2-rdbms
+
+
+
+
 **AWS RDS**   
 *D5*  
 What:

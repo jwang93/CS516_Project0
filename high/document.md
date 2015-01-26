@@ -1,4 +1,58 @@
 
+**MongoDB**   
+*E2*   
+What:
+- one of the most popular NoSQL databases, it is document oriented 
+- shuns the traditional relational database schema for JSON like objects 
+
+Strengths:
+- supports full indexing - primary and secondary
+- huge community of users; tested and ready for production environments
+- it is open source and free to use 
+- it has a flexible schema - you could even all it schema-less 
+- this is a huge value if you are still in the early stages of your use case and you aren't sure how your data is going to be laid out 
+- performs better if your application is more read intensive than write 
+- there is built in sharding in MongoDB which doesn't exist for MySQL 
+
+Weaknesses:
+- by virtue of being document oriented, you lose some functionality that traditional RDBMS has, specifically JOINs 
+- there is no current support for transactions 
+- not as mature as the traditional RDBMS 
+- development is very fast so the system is changing pretty rapidly 
+
+References:
+- [1] http://www.mongodb.org/
+- [2] http://en.wikipedia.org/wiki/MongoDB
+- [3] http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/
+- [4] http://stackoverflow.com/questions/5244437/pros-and-cons-of-mongodb
+- [5] http://www.quora.com/What-are-the-pros-and-cons-of-Mongo-DB-compared-to-MySQL-database
+- [6] http://www.quora.com/Document-oriented-Databases/Can-someone-weigh-the-pros-and-cons-of-MongoDB-vs-Clusterpoint-software-I-cant-find-much-on-Clusterpoint-as-they-havent-really-penetrated-markets-outside-of-Latvia-yet
+
+
+
+**MongoLab**  
+*E2*    
+What:
+- cloud database service that will host MongoDB databases 
+- you can think of it as a MongoDb as a service 
+
+Strengths:
+- ease of use 
+- have a free plan which is good for startups, school projects
+- would be great to use for our CS516 final project if we were using MongoDB
+- great customer support 
+
+Weaknesses:
+- won't be able to support heavy customization 
+
+References:
+- [1] https://mongolab.com/
+- [2] http://en.wikipedia.org/wiki/MongoLab
+- [3] http://mrdanadams.com/2012/mongohq-mongolab-mongodb-customer-service/#.VMV6Xy6Ynxg
+- [4] http://webmasters.stackexchange.com/questions/20782/mongodb-hosting-mongolab-vs-mongohq-vs-mongomachine
+- [5] http://www.quora.com/What-is-the-best-mongodb-hosting
+
+
 **Azure DocumentDB**  
 *E2*  
 What:

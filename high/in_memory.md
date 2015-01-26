@@ -1,4 +1,30 @@
 
+
+**MemSQL**  
+*C3*  
+What:
+- in memory database
+- member of the NewSQL database systems
+- lot of hype around MemSQL: self proclaimed to be fastest in the world due to being distributed in memory and using a column store engine 
+- by having all the data in memory, MemSQL handles persistance by keeping transaction logs and writing out the data every so often 
+
+Strengths:
+- very high performance 
+- it can ingest and process data quickly 
+- will beat a traditional PostgreSQL operation because it keeps all the data in memory and it converts the SQL code into C++ (which is fast)
+
+Weaknesses:
+- can't scale beyond a single node
+- need lots of memory to support this system's speed 
+
+References:
+- [1] http://www.memsql.com/
+- [2] http://en.wikipedia.org/wiki/MemSQL
+- [3] http://www.quora.com/What-are-the-advantages-of-MemSQL-over-PostgreSQL-in-which-specific-cases-would-the-former-be-better-than-the-latter
+- [4] http://www.quora.com/SQL/What-benefits-does-MemSQL-offer-over-running-a-MySQL-database-on-ramdisk
+
+
+
 **Redis**  
 *C2*  
 What: 
