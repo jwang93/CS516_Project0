@@ -16,7 +16,6 @@ References:
 - [2] http://stackoverflow.com/questions/21175941/redis-amazon-ec2-vs-elasticache
 
 
-
 **BerkeleyDB**  
 *D2*  
 What:

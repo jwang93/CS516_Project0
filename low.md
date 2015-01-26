@@ -110,8 +110,7 @@ Due Date: Jan 21, 2015
 *E1*  
 
 
-**109) InfluxDB**  
-*D6*  
+
 
 **110) Infobright**  
 *B4*  

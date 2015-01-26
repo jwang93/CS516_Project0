@@ -21,7 +21,23 @@ References:
 - [2] http://www.itworld.com/article/2730562/big-data/1010data--the-non-elephant-in-the-big-data-room.html 
 
 
+**InfluxDB**   
+*D6*   
+What:
+- time series database
+- that means it is optimized to handle time series data, which are arrays of numbers indexed by time 
 
+Strengths:
+- great for storing metrics, events 
+- no external dependencies, so it's pretty clean and simple to maintain 
+- SQL-like query language 
+- HTTP(s) API
+
+Weaknesses:
+
+References:
+- [1] http://influxdb.com/docs/v0.8/introduction/overview.html
+- [2] http://en.wikipedia.org/wiki/Time_series_database
 
 **Actian Matrix**  
 *C6*  

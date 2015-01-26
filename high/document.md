@@ -30,6 +30,87 @@ References:
 
 
 
+**Riak**  
+*C2*  
+What:
+- open source distributed database developed by Basho
+- also has the functionality of a NoSQL system, key value data store 
+- compared to Cassandra, both of which are based off of Amazon's Dynamo  
+
+Strengths:
+- Basho cites the strengths of Riak being 
+- low latency: getting great performance even under heavy load
+- scalable and available
+- has a built in REST server making it easy to set up and use, operationally simple to maintain
+- one of the problems with Mongo is the working set needs to fit in memory, which is not a requirement for Riak
+
+Weaknesses:
+- if you want to do multi data center replication, you need to purchase the enterprise product 
+- can't perform the range query as fast as Cassandra due to the differences in architecture between the two 
+
+References:
+- [1] http://basho.com/riak/
+- [2] http://en.wikipedia.org/wiki/Riak
+- [3] https://blog.mozilla.org/data/2010/05/18/riak-and-cassandra-and-hbase-oh-my/
+- [4] http://nosql.mypopescu.com/post/30830925905/from-mongodb-to-riak-at-shareaholic
+- [5] http://basho.com/riak-vs-cassandra/
+
+
+
+
+**MemSQL**  
+*C3*  
+What:
+- in memory database
+- member of the NewSQL database systems
+- lot of hype around MemSQL: self proclaimed to be fastest in the world due to being distributed in memory and using a column store engine 
+- by having all the data in memory, MemSQL handles persistance by keeping transaction logs and writing out the data every so often 
+
+Strengths:
+- very high performance 
+- it can ingest and process data quickly 
+- will beat a traditional PostgreSQL operation because it keeps all the data in memory and it converts the SQL code into C++ (which is fast)
+
+Weaknesses:
+- can't scale beyond a single node
+- need lots of memory to support this system's speed 
+
+References:
+- [1] http://www.memsql.com/
+- [2] http://en.wikipedia.org/wiki/MemSQL
+- [3] http://www.quora.com/What-are-the-advantages-of-MemSQL-over-PostgreSQL-in-which-specific-cases-would-the-former-be-better-than-the-latter
+- [4] http://www.quora.com/SQL/What-benefits-does-MemSQL-offer-over-running-a-MySQL-database-on-ramdisk
+
+
+
+
+**IBM DB2**  
+*C4*  
+What:
+- family of database servers released by IBM dating back to the 1980s 
+- traditionally have supported the relational model
+- however, in recent years to meet the new demand, they have experimented with document oriented models are well 
+
+Strengths:
+- DB2 is more of an enterprise product although there are many enterprises that use open sourced products like MySQL
+- being enterprise and more mature comes with a standard suite of features like disaster recovery, high availability, scaling 
+- can store XML natively and retrieve them using xPath, xQuery 
+
+Weaknesses:
+- if you are looking for something simpler there are better options such as MySQL
+- like every enterprise product, will cost you money, which is unattractive especially when there are free alternatives 
+
+References:
+- [1] http://www-01.ibm.com/software/data/db2/
+- [2] http://en.wikipedia.org/wiki/IBM_DB2
+- [3] http://www.ehow.com/info_12106599_advantages-db2.html
+- [4] http://db-engines.com/en/system/DB2%3BMySQL
+- [5] http://stackoverflow.com/questions/9299127/mysql-vs-db2-rdbms
+
+
+
+
+
 **MongoLab**  
 *E2*    
 What:

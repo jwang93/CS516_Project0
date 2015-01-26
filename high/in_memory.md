@@ -43,6 +43,37 @@ References:
 - [3] http://www.quora.com/Cloud-Services/What-is-the-difference-between-XAP-and-Cloudify
 
 
+
+**Memcached**  
+*D5*  
+What:
+- distributed in memory object storage system
+- used to speed up database sites that need caching of objects  
+- use case: assume you have this huge MySQL query that would take 5 seconds to run
+- you can just use memcached to store the results, making it much faster 
+
+Strengths:
+- simple, easy to use caching service 
+- gets the job down but it seems like Redis is better overall (see below)
+
+Weaknesses:
+- if you update your content, you need to delete all old keys associated with the previous content 
+- Redis seems to be a categorically better product 
+- it can do everything memcached can do and more 
+- doesn't support querying or analysis 
+- it is meant to be used as a cache 
+
+References:
+- [1] http://memcached.org/
+- [2] http://en.wikipedia.org/wiki/Memcached
+- [3] http://stackoverflow.com/questions/7330985/memcached-pros-and-cons
+- [4] http://stackoverflow.com/questions/22802360/pros-and-cons-of-using-redis-vs-memcacheddb-as-djangos-session-system
+
+
+
+
+
+
 **Redis**  
 *C2*  
 What: 

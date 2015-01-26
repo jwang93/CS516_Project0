@@ -22,6 +22,31 @@ References:
 - [4] http://vschart.com/compare/allegrograph/vs/neo4j
 
 
+**Giraph**  
+*E1*  
+What:
+- system used for iterative graph processing on big data
+- currently exists as an Apache project, used at Facebook
+- based on the Google project called Pregel 
+
+Strengths:
+- great for batch processing of massive graphs 
+- loads the entire dataset into memory across a number of machines 
+- keeps all this data in memory as it does the analysis 
+
+Weaknesses:
+- memory intensive especially compared to something like MapReduce where data is stored on disk 
+- this is the tradeoff you need to address, after all the heavy usage of memory is what makes Giraph so much faster than MapReduce as graph processing 
+
+References:
+- [1] http://giraph.apache.org/
+- [2] http://en.wikipedia.org/wiki/Apache_Giraph
+- [3] http://www.slideshare.net/sscdotopen/introducing-apache-giraph-for-large-scale-graph-processing
+- [4] http://xinhstechblog.blogspot.com/2012/12/scalable-graph-processing-comparing.html
+- [5] http://xinhstechblog.blogspot.com/2012/10/giraph-for-large-multigraphs.html
+
+
+
 **Neo4J**  
 *C1*  
 What:
