@@ -1,4 +1,27 @@
+**SQLite**  
+*B3*  
+What:
+- popular lightweight SQL database engine 
+- it is a part of the program that is using it
+- it is not standalone, which makes it light
+- connotation that SQLite is only good for testing and development 
 
+Strengths:
+- it is severless and has no configuration making it easy to set up and maintain 
+- also get spretty good performance from a speed standpoint because it is completely internal 
+- great for testing and development because it's super easy to set up
+- good for emebedding inside of an application 
+
+Weaknesses:
+- still not your most powerful, robust production databse 
+- doesn't have full concurrency in that it can only support one write at a time 
+- data amount limitation of 140TB, which is a lot but won't work for some 
+
+References:
+- [1] http://www.sqlite.org/
+- [2] http://en.wikipedia.org/wiki/SQLite
+- [3] https://www.digitalocean.com/community/tutorials/how-and-when-to-use-sqlite
+- [4] http://stackoverflow.com/questions/3630/sqlite-vs-mysql
 
 
 **IBM DB2**  
